@@ -1,0 +1,4 @@
+# Normalize line endings across the three supported platforms.
+* text=auto eol=lf
+*.svg text
+*.png binary
