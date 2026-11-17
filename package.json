@@ -1,0 +1,45 @@
+{
+  "name": "dsh-quick-actions",
+  "version": "1.0.0",
+  "description": "Quick-action icons for the workspace folder, a terminal, and VS Code, plus a settings dialog for their order and visibility.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "dsh-bundle",
+    "quick-actions",
+    "vscode",
+    "terminal",
+    "file-manager"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.3 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

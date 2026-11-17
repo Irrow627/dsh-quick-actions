@@ -1,0 +1,11 @@
+# Dependencies and build output
+node_modules/
+
+# Packed distributables
+*.tgz
+*.tar.gz
+
+# Local noise
+*.log
+.DS_Store
+Thumbs.db

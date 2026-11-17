@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Quick Actions",
+    "description": "Quick-action icons in the conversation header, beside the right sidebar's \"Open sidebar\" button — and, while a new session has no messages yet, at the right end of its workspace/preset row: open the workspace folder, open a terminal (an open terminal is revealed instead of creating another), and open the folder in VS Code. The header's \"More actions\" menu contains \"Quick action settings\", where each icon can be dragged into order and switched on or off. Only applications the host detects get an icon."
+  }
+}
